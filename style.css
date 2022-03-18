@@ -1,56 +1,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
-*{
+* {
     --color-bg: gray;
     --primary-bg: #f2f2f2;
 }
-html{
+
+html {
     min-height: 100vh;
 }
-body{
+
+body {
     display: block;
-    margin:0;
+    margin: 0;
     min-height: 100%;
     width: 100vw;
-
     background-color: white;
-
     font-family: sans-serif;
 }
-main{
+
+main {
     display: block;
-    margin:0 auto;
+    margin: 0 auto;
     width: 767px;
     min-height: 100vh;
-
     border: 2px solid gray;
     border-width: 0 2px;
-
     background-color: white;
 }
-header{
-    --margin-height:300px;
-    height: var(--margin-height);
 
+header {
+    --margin-height: 300px;
+    height: var(--margin-height);
     /*Flex*/
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
     justify-content: center;
-
     background-color: var(--primary-bg);
-
     /*テキスト*/
     font-size: calc( var(--margin-height) / 4);
     font-family: 'Quicksand', sans-serif;
 }
-header img{
-    height:50%;
-    margin:calc( var(--margin-height) / 4);
-    margin-left:0;
+
+header img {
+    height: 50%;
+    margin: calc( var(--margin-height) / 4);
+    margin-left: 0;
 }
 
-h1{
+h1 {
     padding: 10px;
     border-bottom: 1px solid var(--color-bg);
     height: 40px;
@@ -58,69 +56,78 @@ h1{
     font-family: 'Quicksand', sans-serif;
 }
 
-p,.text{
+p,
+.text {
     line-height: 1.2em;
 }
-#content div{
+
+#content div {
     margin: 10px;
     font-family: sans-serif;
 }
+
+
 /*リスト始 参考: https://tackweb.net/index.php/2020/04/27/profile_portfolio/ */
-#timeline{
+
+#timeline {
     padding-top: 10px;
 }
+
 #timeline * {
     box-sizing: border-box;
-  }
-  
-  #timeline h1 {
+}
+
+#timeline h1 {
     font-size: 36px;
     margin: 0 0 30px;
     padding: 10px;
     font-weight: bold;
-  }
-  
-  #timeline {
+}
+
+#timeline {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-  }
-  
-  #timeline dt {
+}
+
+#timeline dt {
     text-align: right;
     width: 8.5em;
     padding: 0.5em 1.0em 0.5em 0.5em;
     position: relative;
-  }
-  #timeline dd h2 {
+}
+
+#timeline dd h2 {
     font-size: 22px;
     font-weight: bold;
     margin: 0 0 5px;
-  }
+}
 
-  #timeline dd {
+#timeline dd {
     width: calc(100% - 8.5em);
     padding: 0.3em 2.0em 0.8em;
     border-left: 2px solid #ccc;
-  }
-  #timeline dt::after {
+}
+
+#timeline dt::after {
     content: '●';
     position: absolute;
     right: -0.55em;
     top: 5px;
     font-size: 22px;
     color: green;
-  }
-  @media screen and (max-width: 767px){
-      #timeline{
-          flex-direction: column;
-          flex-wrap: nowrap;
-      }
-    #timeline dt{
+}
+
+@media screen and (max-width: 767px) {
+    #timeline {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    #timeline dt {
         text-align: left;
         width: auto;
     }
-    #timeline dt::before{
+    #timeline dt::before {
         padding-right: 0.5em;
         content: '●';
         color: green;
@@ -128,30 +135,31 @@ p,.text{
     #timeline dt::after {
         display: none;
     }
-    #timeline dd{
-        margin-left: calc( 1em - 1px );
+    #timeline dd {
+        margin-left: calc( 1em - 1px);
         margin-bottom: 10px;
         padding: 0.5em;
-        width: calc(100% - ( 1em + 1px ));
+        width: calc(100% - ( 1em + 1px));
     }
-  }
+}
+
 
 /*リスト終*/
+
 @media screen and (max-width: 767px) {
-    main{
+    main {
         width: 100%;
         border: none;
     }
-    header{
+    header {
         /*Flex*/
         flex-direction: column;
         align-items: center;
         justify-content: center;
-
         /*テキスト*/
         font-size: calc( var(--margin-height) / 6);
     }
-    header img{
+    header img {
         margin: 0;
     }
 }
