@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 * {
-    --color-bg: gray;
+    --color-bg: rgba(128, 128, 128,1);
+    --color-bg-opacity: rgba(128,128,128,0);
     --primary-bg: #f2f2f2;
+    --secondary-bg: rgb(202, 202, 202);
 }
 
 html {
@@ -12,7 +14,7 @@ body {
     display: block;
     margin: 0;
     min-height: 100%;
-    width: 100vw;
+    width: 100%;
     background-color: white;
     font-family: sans-serif;
 }
@@ -61,11 +63,69 @@ p,
     line-height: 1.2em;
 }
 
-#content div {
+.content div {
     margin: 10px;
     font-family: sans-serif;
 }
+ul li{
+    margin-left: 2em;
+}
+/*Languages*/
+#lang-items div{
+    margin: 0px;
+}
+.lang-item{
+    border: 1px solid var(--secondary-bg);
+    border-radius: 5px;
+    margin-bottom:5px !important;
+}
+.lang-item-header{
+    border-radius: 3px;
+    background-color: var(--secondary-bg);
+    display:flex;
+    align-items: center;
+}
+.lang-item-header h2{
+    margin:0px;
+    padding: 5px;
+    font-size: 1.3em;
+    width:50%;
+    font-family: 'Quicksand', sans-serif;
+}
+.lang-item .description{
+    margin: 10px !important;
+}
+.lang-bar-fill{
+    margin: auto 0;
+    border-radius: 3px;
+    height: 10px;
+}
+.lang-item-header .lang-bar{
+    display: flex;
+    width: 45%;
+    height: 10px;
+    background: white;
+    border-radius: 3px;
 
+    align-items: center;
+    justify-content: flex-start;
+}
+.understand{
+    background: linear-gradient(to right,green,yellowgreen);
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+.history{
+    background-color: yellow;
+    border-radius: 0;
+}
+
+.tech{
+    background: linear-gradient(to right,gray,black);
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+/*End Languages*/
 
 /*リスト始 参考: https://tackweb.net/index.php/2020/04/27/profile_portfolio/ */
 
@@ -140,6 +200,9 @@ p,
         margin-bottom: 10px;
         padding: 0.5em;
         width: calc(100% - ( 1em + 1px));
+    }
+    #langTitle{
+        font-size: 25px;
     }
 }
 
