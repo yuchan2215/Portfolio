@@ -57,6 +57,10 @@ h1{
     font-size: 40px;
     font-family: 'Quicksand', sans-serif;
 }
+
+p,.text{
+    line-height: 1.2em;
+}
 #content div{
     margin: 10px;
     font-family: sans-serif;
@@ -67,10 +71,6 @@ h1{
 }
 #timeline * {
     box-sizing: border-box;
-  }
-  
-  #timeline p {
-    line-height: 1.8;
   }
   
   #timeline h1 {
