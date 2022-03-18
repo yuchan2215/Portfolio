@@ -67,6 +67,9 @@ p,
     margin: 10px;
     font-family: sans-serif;
 }
+ul li{
+    margin-left: 2em;
+}
 /*Languages*/
 #lang-items div{
     margin: 0px;
@@ -94,7 +97,6 @@ p,
 }
 .lang-bar-fill{
     margin: auto 0;
-    background: linear-gradient(to right,green,yellowgreen);
     border-radius: 3px;
     height: 10px;
 }
@@ -107,6 +109,21 @@ p,
 
     align-items: center;
     justify-content: flex-start;
+}
+.understand{
+    background: linear-gradient(to right,green,yellowgreen);
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+.history{
+    background-color: yellow;
+    border-radius: 0;
+}
+
+.tech{
+    background: linear-gradient(to right,gray,black);
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
 }
 /*End Languages*/
 
@@ -183,6 +200,9 @@ p,
         margin-bottom: 10px;
         padding: 0.5em;
         width: calc(100% - ( 1em + 1px));
+    }
+    #langTitle{
+        font-size: 25px;
     }
 }
 
