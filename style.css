@@ -34,6 +34,7 @@ header{
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    justify-content: center;
 
     background-color: var(--primary-bg);
 
@@ -44,6 +45,7 @@ header{
 header img{
     height:50%;
     margin:calc( var(--margin-height) / 4);
+    margin-left:0;
 }
 @media screen and (max-width: 767px) {
     main{
