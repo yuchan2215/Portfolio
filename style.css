@@ -63,7 +63,7 @@ p,
     line-height: 1.2em;
 }
 
-#content div {
+.content div {
     margin: 10px;
     font-family: sans-serif;
 }
