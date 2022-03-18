@@ -59,6 +59,82 @@ h1{
     margin: 10px;
     font-family: sans-serif;
 }
+/*リスト始 参考: https://tackweb.net/index.php/2020/04/27/profile_portfolio/ */
+#timeline{
+    padding-top: 10px;
+}
+#timeline * {
+    box-sizing: border-box;
+  }
+  
+  #timeline p {
+    line-height: 1.8;
+  }
+  
+  #timeline h1 {
+    font-size: 36px;
+    margin: 0 0 30px;
+    padding: 10px;
+    font-weight: bold;
+  }
+  
+  #timeline {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  #timeline dt {
+    text-align: right;
+    width: 8.5em;
+    padding: 0.5em 1.0em 0.5em 0.5em;
+    position: relative;
+  }
+  #timeline dd h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0 0 5px;
+  }
+
+  #timeline dd {
+    width: calc(100% - 8.5em);
+    padding: 0.3em 2.0em 0.8em;
+    border-left: 2px solid #ccc;
+  }
+  #timeline dt::after {
+    content: '●';
+    position: absolute;
+    right: -0.55em;
+    top: 5px;
+    font-size: 22px;
+    color: green;
+  }
+  @media screen and (max-width: 767px){
+      #timeline{
+          flex-direction: column;
+          flex-wrap: nowrap;
+      }
+    #timeline dt{
+        text-align: left;
+        width: auto;
+    }
+    #timeline dt::before{
+        padding-right: 0.5em;
+        content: '●';
+        color: green;
+    }
+    #timeline dt::after {
+        display: none;
+    }
+    #timeline dd{
+        margin-left: calc( 1em - 1px );
+        margin-bottom: 10px;
+        padding: 0.5em;
+        width: calc(100% - ( 1em + 1px ));
+    }
+  }
+
+/*リスト終*/
 @media screen and (max-width: 767px) {
     main{
         width: 100%;
