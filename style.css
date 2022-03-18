@@ -1,0 +1,25 @@
+*{
+    --color-bg: gray;
+}
+html{
+    min-height: 100vh;
+}
+body{
+    background-color: var(--color-bg);
+    min-height: 100%;
+    display: block;
+    margin:0;
+    width: 100vw;
+}
+main{
+    display: block;
+    margin:0 auto;
+    background-color: white;
+    width: 767px;
+    min-height: 100vh;
+}
+@media screen and (max-width: 767px) {
+    main{
+        width: 100%;
+    }
+}
