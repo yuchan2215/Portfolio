@@ -7,39 +7,43 @@ html{
     min-height: 100vh;
 }
 body{
-    background-color: white;
-    min-height: 100%;
     display: block;
     margin:0;
+    min-height: 100%;
     width: 100vw;
+
+    background-color: white;
 }
 main{
     display: block;
     margin:0 auto;
-    border-width: 0 2px;
-    border-color: gray;
-    border-style: solid;
-    background-color: white;
     width: 767px;
     min-height: 100vh;
+
+    border: 2px solid gray;
+    border-width: 0 2px;
+
+    background-color: white;
 }
 header{
     --margin-height:300px;
     height: var(--margin-height);
+
+    /*Flex*/
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+
     background-color: var(--primary-bg);
+
+    /*テキスト*/
     font-size: calc( var(--margin-height) / 4);
+    font-family: 'Quicksand', sans-serif;
 }
 header img{
-    display: inline-block;
     height:50%;
     margin:calc( var(--margin-height) / 4);
-}
-#hello{
-    font-family: 'Quicksand', sans-serif;
 }
 @media screen and (max-width: 767px) {
     main{
@@ -47,9 +51,12 @@ header img{
         border: none;
     }
     header{
+        /*Flex*/
         flex-direction: column;
         align-items: center;
         justify-content: center;
+
+        /*テキスト*/
         font-size: calc( var(--margin-height) / 6);
     }
     header img{
