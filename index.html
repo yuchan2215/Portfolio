@@ -13,19 +13,20 @@
 </head>
 
 <body>
-    <main>
-        <header>
-            <img src="img/icon.png" alt="Miyayuのアイコン">
-            <div id="hello">Hi There.</div>
-        </header>
-        <div class="content">
-            <h1>Profile</h1>
-            <div class="text">2003年2月20日生まれ。<br>小学生の先生の影響を受けプログラミングに興味を持ち始め、今では他人から依頼いただいたものを含めて開発を行なっている。</div>
-        </div>
-        <!--参考： https://tackweb.net/index.php/2020/04/27/profile_portfolio/ -->
-        <div class="content">
-            <h1>Carrier</h1>
-            <dl id="timeline">
+<main>
+    <header>
+        <img src="img/icon.png" alt="Miyayuのアイコン">
+        <div id="hello">Hi There.</div>
+    </header>
+    <div class="content">
+        <h1>Profile</h1>
+        <div class="text">2003年2月20日生まれ。<br>小学生の先生の影響を受けプログラミングに興味を持ち始め、今では他人から依頼いただいたものを含めて開発を行なっている。</div>
+    </div>
+    <!--参考： https://tackweb.net/index.php/2020/04/27/profile_portfolio/ -->
+    <!-- Timelines-->
+    <div class="content">
+        <h1>Carrier</h1>
+        <dl id="timeline">
             <template v-for="item in items">
                 <dt>{{ item.time }}</dt>
                 <dd>
@@ -35,15 +36,17 @@
             </template>
         </dl>
         <script src="scripts/timeline.js"></script>
-        </div>
-        <div class="content">
-            <h1 id="langTitle">Languages/Frameworks</h1>
-            <div>バーは習得度を表しています。習得度は次の要素から成り立っています。
+    </div>
+    <!--Languages-->
+    <div class="content">
+        <h1 id="langTitle">Languages/Frameworks</h1>
+        <div>バーは習得度を表しています。習得度は次の要素から成り立っています。
             <ul>
                 <li>調べながらでなくても書けるかどうか(40)</li>
                 <li>制作経験(30)</li>
                 <li>初学者に教えられるか(30)</li>
-            </ul></div>
+            </ul>
+        </div>
         <div id="lang-items">
             <template v-for="item in item">
                 <div class="lang-item">
@@ -60,7 +63,8 @@
             </template>
         </div>
         <script src="scripts/langs.js"></script>
-    </main>
+    </div>
+</main>
 </body>
 
 </html>
